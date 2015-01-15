@@ -23,6 +23,7 @@ eg: {"app_domain":"encrypted.google.com"}
 
 #### For end point /v1/create/job
 |Key |Description|
+|----|-----------|
 |api_key| Provided at the time of registration of the you application to system.|
 |source_url| Source of the file needed to be transformed.|
 |notification_url| URL at which you need to be notified once job is complete.|
