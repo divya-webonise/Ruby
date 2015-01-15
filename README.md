@@ -82,12 +82,10 @@ cd voodoo
 ```Shell
 bin/nsqlookupd
 ```
-
 2. bin/nsqd --lookupd-tcp-address=127.0.0.1:4160
 ```Shell
 bin/nsqd --lookupd-tcp-address=127.0.0.1:4160
 ```
-
 3. bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
 ```Shell
 bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
@@ -97,7 +95,6 @@ bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
 ##### Run the commands if you are first time user of service 
 
 1. Install the dependencies
-
 ```Shell
 bundle install
 ```
@@ -116,12 +113,10 @@ ruby bin/migration_up
 ```Shell
 rackup
 ```
-
 2. Start **`Image consumer`** on new console
 ```Shell
 ruby bin/image_consumer
 ```
-
 3. Start the **`Video Consumer`** on new console
 ```Shell
 ruby bin/vidoe_consumer
