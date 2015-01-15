@@ -22,10 +22,11 @@ app_domain: name of the domain you want to register into service
 eg: {"app_domain":"encrypted.google.com"}
 
 #### For end point /v1/create/job
-api_key: Provided at the time of registration of the you application to system
-source_url: Source of the file needed to be transformed.
-notification_url: URL at which you need to be notified once job is complete
-actions: list of all the transformation need to be performed on your file.
+|Key |Description|
+|api_key| Provided at the time of registration of the you application to system.|
+|source_url| Source of the file needed to be transformed.|
+|notification_url| URL at which you need to be notified once job is complete.|
+|actions| list of all the transformation need to be performed on your file.|
 eg:
 ```
  {
