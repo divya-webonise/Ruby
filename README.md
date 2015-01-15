@@ -97,12 +97,14 @@ bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
 ##### Run the commands if you are first time user of service 
 
 1. Install the dependencies
+
 ```Shell
 bundle install
 ```
 2. Edit config/database.yml according to your database server
 
 3. Run the migrations
+
 ```Shell
 ruby bin/migration_up
 ```
@@ -110,15 +112,17 @@ ruby bin/migration_up
 
 ##### Commands to run service:
 
-1. Start *RACK server*
+1. Start `**RACK server**` on one console
 ```Shell
-run 'rackup' on one console
+rackup
 ```
-2. Start **Image consumer**
+
+2. Start `**Image consumer**` on new console
 ```Shell
-run 'ruby bin/image_consumer' on other console
+ruby bin/image_consumer
 ```
-3. Start the `Video Consumer`
+
+3. Start the `**Video Consumer**` on new console
 ```Shell
-run 'ruby bin/vidoe_consumer' on another console
+ruby bin/vidoe_consumer
 ```
