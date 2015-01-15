@@ -64,23 +64,29 @@ It is a software suite to create, edit, compose, or convert bitmap images. It ca
 Installation
 http://nsq.io/deployment/installing.html
 
-STEPS to Run Service
+### STEPS to Run Service
 
-START NSQ
-Run binary in nsq-0.3.0.linux-amd64.go1.3.3
+#### START NSQ
+
+##### Run binary in nsq-0.3.0.linux-amd64.go1.3.3
+
 1. bin/nsqlookupd
 2. bin/nsqd --lookupd-tcp-address=127.0.0.1:4160
 3. bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
 
-cd to voodoo Directory
+Change to voodoo Directory
+```
+cd voodoo
+```
+##### Run the commands if you are first time user of service 
 
-If first time useage of service run commands
 1. bundle install
 2. edit conf/database.yml according to your database server
 3. ruby bin/migration_up
 
 
-Commands to run service:
+##### Commands to run service:
+
 1. run 'rackup' on one console
 2. run 'ruby bin/image_consumer' on other console
 3. run 'ruby bin/vidoe_consumer' on another console
