@@ -78,15 +78,15 @@ cd voodoo
 ##### Run binary in nsq-0.3.0.linux-amd64.go1.3.3
 
 
-1. bin/nsqlookupd.
+[1.] bin/nsqlookupd.
 ```Shell
 bin/nsqlookupd
 ```
-2. bin/nsqd --lookupd-tcp-address=127.0.0.1:4160.
+[2.] bin/nsqd --lookupd-tcp-address=127.0.0.1:4160.
 ```Shell
 bin/nsqd --lookupd-tcp-address=127.0.0.1:4160
 ```
-3. bin/nsqadmin --lookupd-http-address=127.0.0.1:4161.
+[3.] bin/nsqadmin --lookupd-http-address=127.0.0.1:4161.
 ```Shell
 bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
 ```
