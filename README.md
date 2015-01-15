@@ -66,18 +66,34 @@ http://nsq.io/deployment/installing.html
 
 ### STEPS to Run Service
 
-#### START NSQ
-
-##### Run binary in nsq-0.3.0.linux-amd64.go1.3.3
-
-1. bin/nsqlookupd
-2. bin/nsqd --lookupd-tcp-address=127.0.0.1:4160
-3. bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
+#### Change Directory
 
 Change to voodoo Directory
 ```Shell
 cd voodoo
 ```
+
+#### START NSQ
+
+##### Run binary in nsq-0.3.0.linux-amd64.go1.3.3
+
+
+1. bin/nsqlookupd
+```Shell
+bin/nsqlookupd
+```
+
+2. bin/nsqd --lookupd-tcp-address=127.0.0.1:4160
+```Shell
+bin/nsqd --lookupd-tcp-address=127.0.0.1:4160
+```
+
+3. bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
+```Shell
+bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
+```
+
+
 ##### Run the commands if you are first time user of service 
 
 1. bundle install
