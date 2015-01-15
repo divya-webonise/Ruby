@@ -27,6 +27,7 @@ source_url: Source of the file needed to be transformed.
 notification_url: URL at which you need to be notified once job is complete
 actions: list of all the transformation need to be performed on your file.
 eg:
+```
  {
   "api_key": "78bd3f81a861ce84",
   "source_url": "https://encrypted.google.com/images/srpr/logo11w.png",
@@ -36,7 +37,7 @@ eg:
   },
   "notification_url": "http://encrypted.google.com/notificationpath"
 }
-
+```
 
 Dependencies
 ------------
