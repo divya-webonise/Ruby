@@ -112,17 +112,17 @@ ruby bin/migration_up
 
 ##### Commands to run service:
 
-1. Start `**RACK server**` on one console
+1. Start **`RACK server`** on one console
 ```Shell
 rackup
 ```
 
-2. Start `**Image consumer**` on new console
+2. Start **`Image consumer`** on new console
 ```Shell
 ruby bin/image_consumer
 ```
 
-3. Start the `**Video Consumer**` on new console
+3. Start the **`Video Consumer`** on new console
 ```Shell
 ruby bin/vidoe_consumer
 ```
