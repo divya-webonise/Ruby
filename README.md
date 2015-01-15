@@ -3,7 +3,7 @@ VooDoo
 
 **`Voodoo`** is a Software as a Service which provides Services for Media transformations. Voodoo supports Image and Video transformation.
 
-####You can do following operations on Images
+#### You can do following operations on Images
 * Crop
 * Change Resolution
 * Thumbnail
@@ -15,12 +15,13 @@ VooDoo
 * png
 * gif
 
-You can do following operations on Videos
+#### You can do following operations on Videos
 * Split
 * Cut
 * Change the resolution
 * Change the video format
 * Change Video bitrate
+* Generate thumbnail
 
 ##### Supported video formats
 * mp4
@@ -33,51 +34,6 @@ You can do following operations on Videos
 * webm
 * flv
 
-
-Usage of Service
-----------------
-
-### API End Points:
-| METHOD | End-Points       | Usage                                              | Returns                                                  |
-|--------|------------------|----------------------------------------------------|----------------------------------------------------------|
-| POST	 | /v1/registration	| Registration of you application to voodoo service. | Access key for accessing service(API-KEY)                |
-| POST	 | /v1/create/job	| To submit a Job to service for process.            | Destination Url from where to collect your processes job |
-
-
-### API-End Points and Parameters
-#### For end point /v1/registration
-|    Key   |Description                                          |
-|----------|-----------------------------------------------------|
-|app_domain| name of the domain you want to register into service|
-
-* Example
-
-```ruby
-{"app_domain":"encrypted.google.com"}
-```
-
-#### For end point /v1/create/job
-|Key             |Description                                                            |
-|----------------|-----------------------------------------------------------------------|
-|api_key         | Provided at the time of registration of the you application to system.|
-|source_url      | Source of the file needed to be transformed.                          |
-|notification_url| URL at which you need to be notified once job is complete.            |
-|actions         | list of all the transformation need to be performed on your file.     |
-
-* Example
-
-```ruby
- {
-  "api_key": "78bd3f81a861ce84",
-  "source_url": "https://encrypted.google.com/images/srpr/logo11w.png",
-  "actions": 
-  {
-    "rotate": 180
-  },
-  "notification_url": "http://encrypted.google.com/notificationpath"
-}
-```
-
 Dependencies
 ------------
 
@@ -88,10 +44,13 @@ It is the leading multimedia framework, able to decode, encode, transcode, strea
 It is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including GIF, JPEG, PDF, PNG, etc.ImageMagick used resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
 
 ### NSQ (New Simple Queue)
+NSQ is a realtime distributed messaging platform designed to operate at scale, handling billions of messages per day.
+
 Installation
 http://nsq.io/deployment/installing.html
 
-### STEPS to Run Service
+STEPS to Run Service
+--------------------
 
 #### Change Directory
 
