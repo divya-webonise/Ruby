@@ -78,15 +78,15 @@ cd voodoo
 ##### Run binary in nsq-0.3.0.linux-amd64.go1.3.3
 
 
-[1.] bin/nsqlookupd.
+* bin/nsqlookupd.
 ```Shell
 bin/nsqlookupd
 ```
-[2.] bin/nsqd --lookupd-tcp-address=127.0.0.1:4160.
+* bin/nsqd --lookupd-tcp-address=127.0.0.1:4160.
 ```Shell
 bin/nsqd --lookupd-tcp-address=127.0.0.1:4160
 ```
-[3.] bin/nsqadmin --lookupd-http-address=127.0.0.1:4161.
+* bin/nsqadmin --lookupd-http-address=127.0.0.1:4161.
 ```Shell
 bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
 ```
@@ -94,13 +94,13 @@ bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
 
 ##### Run the commands if you are first time user of service 
 
-1. Install the dependencies
+* Install the dependencies
 ```Shell
 bundle install
 ```
-2. Edit config/database.yml according to your database server
+* Edit config/database.yml according to your database server
 
-3. Run the migrations
+* Run the migrations
 
 ```Shell
 ruby bin/migration_up
@@ -109,15 +109,15 @@ ruby bin/migration_up
 
 ##### Commands to run service:
 
-1. Start **`RACK server`** on one console
+* Start **`RACK server`** on one console
 ```Shell
 rackup
 ```
-2. Start **`Image consumer`** on new console
+* Start **`Image consumer`** on new console
 ```Shell
 ruby bin/image_consumer
 ```
-3. Start the **`Video Consumer`** on new console
+* Start the **`Video Consumer`** on new console
 ```Shell
 ruby bin/vidoe_consumer
 ```
