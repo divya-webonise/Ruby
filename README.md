@@ -75,7 +75,7 @@ http://nsq.io/deployment/installing.html
 3. bin/nsqadmin --lookupd-http-address=127.0.0.1:4161
 
 Change to voodoo Directory
-```
+```Shell
 cd voodoo
 ```
 ##### Run the commands if you are first time user of service 
