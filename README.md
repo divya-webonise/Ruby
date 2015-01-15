@@ -1,10 +1,37 @@
 VooDoo
 ======
 
-Voodoo is a SaaS which provides a Services for Media transformations which is implemented on ruby.
+**`Voodoo`** is a Software as a Service which provides Services for Media transformations. Voodoo supports Image and Video transformation.
 
-Current version provides transformations for following formats: 
-.jpg,.jpeg,.png,.gif,.mp4,.avi,.ogg,.mkv,.wav,.mov,.m4a,.webm.
+####You can do following operations on Images
+* Crop
+* Change Resolution
+* Thumbnail
+* Rotate
+* Scale
+
+##### Supported image formats
+* jpg/jpeg
+* png
+* gif
+
+You can do following operations on Videos
+* Change the resolution
+* Change the video format
+* Video bitrate
+* Split
+* 
+
+##### Supported video formats
+* mp4
+* avi
+* ogg
+* mkv
+* wav
+* mov
+* m4a
+* webm
+* flv
 
 
 Usage of Service
@@ -54,7 +81,7 @@ Usage of Service
 Dependencies
 ------------
 
-### Ffmpeg:
+### FFmpeg:
 It is the leading multimedia framework, able to decode, encode, transcode, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge. No matter if they were designed by some standards committee, the community or a corporation.
 
 ### Imagemagick:
