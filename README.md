@@ -23,8 +23,10 @@ Usage of Service
 |----------|-----------------------------------------------------|
 |app_domain| name of the domain you want to register into service|
 
+* Example
+
 ```ruby
-eg: {"app_domain":"encrypted.google.com"}
+{"app_domain":"encrypted.google.com"}
 ```
 
 #### For end point /v1/create/job
@@ -35,7 +37,8 @@ eg: {"app_domain":"encrypted.google.com"}
 |notification_url| URL at which you need to be notified once job is complete.            |
 |actions         | list of all the transformation need to be performed on your file.     |
 
-eg:
+* Example
+
 ```ruby
  {
   "api_key": "78bd3f81a861ce84",
