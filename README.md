@@ -16,10 +16,11 @@ Usage of Service
 | POST	 | /v1/registration	| Registration of you application to voodoo service. | Access key for accessing service(API-KEY)                |
 | POST	 | /v1/create/job	| To submit a Job to service for process.            | Destination Url from where to collect your processes job |
 
+
 ### API-End Points and Parameters
 #### For end point /v1/registration
-|Key|Description|
-|---|-----------|
+|    Key   |Description                                          |
+|----------|-----------------------------------------------------|
 |app_domain| name of the domain you want to register into service|
 
 ```ruby
@@ -27,14 +28,15 @@ eg: {"app_domain":"encrypted.google.com"}
 ```
 
 #### For end point /v1/create/job
-|Key |Description|
-|----|-----------|
-|api_key| Provided at the time of registration of the you application to system.|
-|source_url| Source of the file needed to be transformed.|
-|notification_url| URL at which you need to be notified once job is complete.|
-|actions| list of all the transformation need to be performed on your file.|
+|Key             |Description                                                            |
+|----------------|-----------------------------------------------------------------------|
+|api_key         | Provided at the time of registration of the you application to system.|
+|source_url      | Source of the file needed to be transformed.                          |
+|notification_url| URL at which you need to be notified once job is complete.            |
+|actions         | list of all the transformation need to be performed on your file.     |
+
 eg:
-```
+```ruby
  {
   "api_key": "78bd3f81a861ce84",
   "source_url": "https://encrypted.google.com/images/srpr/logo11w.png",
