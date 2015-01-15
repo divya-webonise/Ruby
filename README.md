@@ -16,11 +16,11 @@ VooDoo
 * gif
 
 You can do following operations on Videos
+* Split
+* Cut
 * Change the resolution
 * Change the video format
-* Video bitrate
-* Split
-* 
+* Change Video bitrate
 
 ##### Supported video formats
 * mp4
