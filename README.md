@@ -18,8 +18,13 @@ Usage of Service
 
 ### API-End Points and Parameters
 #### For end point /v1/registration
-app_domain: name of the domain you want to register into service
+|Key|Description|
+|---|-----------|
+|app_domain| name of the domain you want to register into service|
+
+```ruby
 eg: {"app_domain":"encrypted.google.com"}
+```
 
 #### For end point /v1/create/job
 |Key |Description|
